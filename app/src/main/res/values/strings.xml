@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LocoLaser example</string>
+    <string name="screen_main_app_description">This is example application of how to use the LocoLser.</string>
+    <string name="screen_main_plural_example_title">Plural string examples</string>
+    <plurals name="screen_main_plural_string">
+        <item quantity="other">Other: %d values</item>
+        <item quantity="one">One: 1 value</item>
+        <item quantity="zero">Zero: no values</item>
+    </plurals>
+</resources>
