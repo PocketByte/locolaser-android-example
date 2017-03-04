@@ -27,7 +27,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     // 2: Add localize dependency
-    localize 'ru.pocketbyte.locolaser:locolaser-mobile-googlesheet:1.0.0'
+    localize 'ru.pocketbyte.locolaser:locolaser-mobile-googlesheet:1.0.+'
 }
 
 // 3: Run localization before build
