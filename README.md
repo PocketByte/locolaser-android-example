@@ -15,7 +15,7 @@ buildscript {
   }
   dependencies {
     // 1.2: Add classpath dependency
-    classpath "gradle.plugin.ru.pocketbyte.locolaser:plugin:1.0.0"
+    classpath "gradle.plugin.ru.pocketbyte.locolaser:plugin:1.0.1"
   }
 }
 ```
@@ -26,11 +26,15 @@ apply plugin: "ru.pocketbyte.locolaser"
 ```
 
 ##### 2 Step: Add 'localize' dependensy
-Choose which tipe of artifact you will use and add it as **`localize`** dependency. This example uses artifact to work with Google Sheets:
+Choose which tipe of artifact you will use and add them as **`localize`** dependency. This example uses artifact to work with Google Sheets:
 ```gradle
 dependencies {
-    // 2: Add classpath dependency
-    localize 'ru.pocketbyte.locolaser:locolaser-mobile-googlesheet:1.0.+'
+    // 2.1: Add core library dependency
+    localize 'ru.pocketbyte.locolaser:core:1.2.1'
+    // 2.2: Add dependency for mobile platform
+    localize 'ru.pocketbyte.locolaser:platform-mobile:1.2.1'
+    // 2.3: Add dependency for a source
+    localize 'ru.pocketbyte.locolaser:source-googlesheet:1.2.1'
 }
 ```
 ##### 3 Step: Run localization before build

@@ -26,8 +26,12 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     testCompile 'junit:junit:4.12'
 
-    // 2: Add localize dependency
-    localize 'ru.pocketbyte.locolaser:locolaser-mobile-googlesheet:1.1.+'
+    // 2.1: Add core library dependency
+    localize 'ru.pocketbyte.locolaser:core:1.2.1'
+    // 2.2: Add dependency for mobile platform
+    localize 'ru.pocketbyte.locolaser:platform-mobile:1.2.1'
+    // 2.3: Add dependency for a source
+    localize 'ru.pocketbyte.locolaser:source-googlesheet:1.2.1'
 }
 
 // 3: Run localization before build
