@@ -29,9 +29,9 @@ apply plugin: "ru.pocketbyte.locolaser"
 Choose which tipe of artifact you will use and add them as **`localize`** dependency. This example uses artifact to work with Google Sheets:
 ```gradle
 dependencies {
-    // 2.1: Add core library dependency
+    // 2.1: Add core library dependency (mandatory)
     localize 'ru.pocketbyte.locolaser:core:1.2.1'
-    // 2.2: Add dependency for mobile platform
+    // 2.2: Add dependency for mobile platform (mandatory for Android)
     localize 'ru.pocketbyte.locolaser:platform-mobile:1.2.1'
     // 2.3: Add dependency for a source
     localize 'ru.pocketbyte.locolaser:source-googlesheet:1.2.1'
@@ -45,7 +45,7 @@ afterEvaluate {
     preBuild.dependsOn project.tasks.localize
 }
 ```
-You can remove this code if you didn't want to start localization before each build.
+You can remove this code if you don't want to start localization before each build.
 ##### 4 Step: Create configuration file
 By default project should have localization config file with name`"localize_config.json"` in the root folder of the module.
 <br>This example has this file in the place. But you can change location of this file and it's name by following string:
