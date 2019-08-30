@@ -6,7 +6,8 @@
       "column_locales":["base", "ru"],
       "column_comment":"base",
       "column_quantity":"quantity",
-      "id":"1JZxUcu30BjxLwHg12bdHTxjDgsGFX9HA9zC4Jd8cuUM"
+      "id":"1JZxUcu30BjxLwHg12bdHTxjDgsGFX9HA9zC4Jd8cuUM",
+      "credential_file": "service_account.json"
   },
   "duplicate_comments": false
 }

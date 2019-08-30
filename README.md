@@ -15,7 +15,7 @@ buildscript {
   }
   dependencies {
     // 1.2: Add classpath dependency
-    classpath "gradle.plugin.ru.pocketbyte.locolaser:plugin:1.0.1"
+    classpath "gradle.plugin.ru.pocketbyte.locolaser:plugin:1.0.4"
   }
 }
 ```
@@ -30,11 +30,11 @@ Choose which tipe of artifact you will use and add them as **`localize`** depend
 ```gradle
 dependencies {
     // 2.1: Add core library dependency (mandatory)
-    localize 'ru.pocketbyte.locolaser:core:1.2.1'
+    localize 'ru.pocketbyte.locolaser:core:1.3.0'
     // 2.2: Add dependency for mobile platform (mandatory for Android)
-    localize 'ru.pocketbyte.locolaser:platform-mobile:1.2.1'
+    localize 'ru.pocketbyte.locolaser:platform-mobile:1.3.0'
     // 2.3: Add dependency for a source
-    localize 'ru.pocketbyte.locolaser:source-googlesheet:1.2.1'
+    localize 'ru.pocketbyte.locolaser:source-googlesheet:1.3.0'
 }
 ```
 ##### 3 Step: Run localization before build

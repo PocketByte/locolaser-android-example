@@ -2,6 +2,7 @@
 
 buildscript {
     repositories {
+        google()
         jcenter()
 
         // 1.1: Add plugins maven repository
@@ -10,15 +11,16 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:3.4.2'
 
         // 1.2: Add classpath dependency
-        classpath "gradle.plugin.ru.pocketbyte.locolaser:plugin:1.0.1"
+        classpath "gradle.plugin.ru.pocketbyte.locolaser:plugin:1.0.4"
     }
 }
 
 allprojects {
     repositories {
+        google()
         jcenter()
     }
 }
