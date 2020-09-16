@@ -11,10 +11,10 @@
     /* Plural string examples */
     <string name="screen_main_plural_example_title">Примеры Plural строк</string>
     <plurals name="screen_main_plural_string">
-        <item quantity="other">Other: %d значений</item>
-        <item quantity="one">One: %d значение</item>
         <item quantity="zero">Zero: нет значений</item>
         <item quantity="two">Two: %d значения</item>
+        <item quantity="other">Other: %d значений</item>
+        <item quantity="one">One: %d значение</item>
         <item quantity="few">Few: %d значений</item>
     </plurals>
 </resources>
